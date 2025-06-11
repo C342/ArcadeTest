@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;        // Your car's transform
-    public Vector3 offset = new Vector3(0f, 5f, -10f); // Offset from the car
-    public float smoothSpeed = 0.125f; // Smoothing speed
+    public Transform target;
+    public Vector3 offset = new Vector3(0f, 5f, -10f);
+    public float smoothSpeed = 0.125f;
 
     void LateUpdate()
     {
@@ -15,6 +15,6 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = smoothedPosition;
 
-        transform.LookAt(target); // Optional: keep the camera looking at the car
+        transform.LookAt(target);
     }
 }
