@@ -638,8 +638,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5858958736901008442}
   serializedVersion: 4
-  m_Mass: 1500
-  m_Drag: 0
+  m_Mass: 2000
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -655,7 +655,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!114 &4836171169095447899
 MonoBehaviour:
@@ -674,8 +674,9 @@ MonoBehaviour:
   wheel2: {fileID: 3796644390614782717}
   wheel3: {fileID: 3370938970870490771}
   wheel4: {fileID: 8849029076424448264}
-  drivespeed: 650
-  steerspeed: 40
+  drivespeed: 1250
+  steerspeed: 45
+  speedText: {fileID: 0}
 --- !u!1 &6868642932709821823
 GameObject:
   m_ObjectHideFlags: 0
