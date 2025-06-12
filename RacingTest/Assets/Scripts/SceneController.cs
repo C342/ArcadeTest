@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public void Restart()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
