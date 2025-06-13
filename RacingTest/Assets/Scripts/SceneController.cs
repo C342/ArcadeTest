@@ -39,8 +39,12 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void Start(string)
+    public static void switchScene(string SceneName)
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene(SceneName);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
