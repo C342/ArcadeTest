@@ -1023,13 +1023,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345590376}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.05517055, y: 0.6691305, z: 0.060897388, w: 0.7385879}
-  m_LocalPosition: {x: -112.28985, y: 51.930885, z: 694.8876}
+  m_LocalRotation: {x: 0.07316142, y: 0.66740304, z: 0.080755755, w: 0.7366811}
+  m_LocalPosition: {x: -112.33049, y: 54.06061, z: 695.29834}
   m_LocalScale: {x: 84.24975, y: 0.098406, z: 77.18333}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552576197}
-  m_LocalEulerAnglesHint: {x: 0, y: 84.351, z: 9.427}
+  m_LocalEulerAnglesHint: {x: 0, y: 84.351, z: 12.512}
 --- !u!1001 &587891712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1416,13 +1416,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687232842}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.05517147, y: 0.669133, z: 0.06089798, w: 0.7385855}
-  m_LocalPosition: {x: -108.23, y: 52.34, z: 692.93}
+  m_LocalRotation: {x: 0.07316352, y: 0.6674054, z: 0.080757506, w: 0.73667854}
+  m_LocalPosition: {x: -108.268196, y: 54.68975, z: 693.144}
   m_LocalScale: {x: 89.5018, y: 0.09840602, z: 17.631443}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552576197}
-  m_LocalEulerAnglesHint: {x: 0, y: 84.351, z: 9.427}
+  m_LocalEulerAnglesHint: {x: 0, y: 84.351, z: 12.512}
 --- !u!1 &698329032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Car: {fileID: 1443044560}
-  RestartText: {fileID: 0}
+  RestartText: {fileID: 2047897369}
 --- !u!4 &772713620
 Transform:
   m_ObjectHideFlags: 0
@@ -5280,6 +5280,10 @@ PrefabInstance:
       propertyPath: speedText
       value: 
       objectReference: {fileID: 1881266454}
+    - target: {fileID: 4836171169095447899, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
+      propertyPath: drivespeed
+      value: 1250
+      objectReference: {fileID: 0}
     - target: {fileID: 5858958736901008442, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
       propertyPath: m_Name
       value: Car

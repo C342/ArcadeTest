@@ -21,15 +21,13 @@ public class SceneController : MonoBehaviour
         {
             if (Car != null)
             {
-                float currentX = Car.transform.eulerAngles.x;
-                float currentZ = Car.transform.eulerAngles.z;
-                Car.transform.rotation = Quaternion.Euler(currentX, 180f, currentZ);
+                Car.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             }
         }
 
         if (Car != null && RestartText != null)
         {
-            if (Car.transform.up.y < 0.1f)
+            if (Car.transform.up.y < 0f)
             {
                 RestartText.gameObject.SetActive(true);
             }
@@ -39,5 +37,10 @@ public class SceneController : MonoBehaviour
                 RestartText.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void Start(string)
+    {
+        SceneManager.LoadScene("");
     }
 }
