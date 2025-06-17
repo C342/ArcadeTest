@@ -986,6 +986,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4836171169095447899, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
+      propertyPath: downforce
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836171169095447899, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
       propertyPath: speedText
       value: 
       objectReference: {fileID: 1881266454}
@@ -1033,6 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 1000
+  resetSpeed: 5
 --- !u!1 &345590376
 GameObject:
   m_ObjectHideFlags: 0
