@@ -937,6 +937,10 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 1523486495896726087, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3852862257994683699, guid: 00d76723a8f818d48917a1d31887bafc, type: 3}
       propertyPath: sceneId
       value: 3906786012
@@ -2209,7 +2213,7 @@ Transform:
   m_GameObject: {fileID: 919335449}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6714037, z: -0, w: 0.74109185}
-  m_LocalPosition: {x: -87.63417, y: 36.333565, z: 453.66687}
+  m_LocalPosition: {x: -89.600006, y: 36.333565, z: 473.59998}
   m_LocalScale: {x: 73.67976, y: 44.146893, z: 77.18332}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4030,7 +4034,7 @@ Transform:
   m_GameObject: {fileID: 1720595862}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6694328, z: -0, w: 0.7428726}
-  m_LocalPosition: {x: -82.83417, y: 58.53356, z: 453.86682}
+  m_LocalPosition: {x: -84.8, y: 58.53356, z: 473.8}
   m_LocalScale: {x: 79.01236, y: 0.105776615, z: 17.631445}
   m_ConstrainProportionsScale: 0
   m_Children: []
