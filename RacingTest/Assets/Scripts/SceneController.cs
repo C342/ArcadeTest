@@ -17,14 +17,6 @@ public class SceneController : MonoBehaviour
             SceneManager.LoadScene("Level");
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (Car != null)
-            {
-                Car.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-            }
-        }
-
         if (Car != null && RestartText != null)
         {
             if (Car.transform.up.y < 0f)
@@ -43,7 +35,7 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneName);
     }
-    public void QuitGame()
+    public static void QuitGame()
     {
         Application.Quit();
     }
