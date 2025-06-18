@@ -675,7 +675,7 @@ MonoBehaviour:
   wheel3: {fileID: 3370938970870490771}
   wheel4: {fileID: 8849029076424448264}
   drivespeed: 1250
-  steerspeed: 45
+  steerspeed: 50
   speedText: {fileID: 0}
 --- !u!1 &6868642932709821823
 GameObject:
