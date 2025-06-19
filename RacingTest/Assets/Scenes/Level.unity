@@ -273,6 +273,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4581321738610438, guid: dbe67ee931f6e064591c847e44ac7bd8, type: 3}
   m_PrefabInstance: {fileID: 331875703}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &63332650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5858958736901008442, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
+  m_PrefabInstance: {fileID: 268717406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &81234714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1849,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5858958736901008442, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1102209301}
+    - targetCorrespondingSourceObject: {fileID: 5858958736901008442, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1102209300}
   m_SourcePrefab: {fileID: 100100000, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
 --- !u!1001 &277014441
 PrefabInstance:
@@ -5141,7 +5152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Car: {fileID: 1102209297}
   RestartText: {fileID: 2047897369}
-  RotationSpeed: 90
 --- !u!1001 &783654846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6836,6 +6846,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4215691460694773496, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
   m_PrefabInstance: {fileID: 268717406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1102209300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63332650}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26bf1976445bb52419aa39c0ee457678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotationSpeed: 200
+--- !u!143 &1102209301
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63332650}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1117341621
 PrefabInstance:
   m_ObjectHideFlags: 0
