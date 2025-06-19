@@ -21,14 +21,14 @@ public class Movement3D : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    private void OnEnable()
-    {
-        inputActions.Player.Enable();
+//    private void OnEnable()
+//    {
+//        inputActions.Player.Enable();
 
-        inputActions.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
-        inputActions.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+//        inputActions.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+//        inputActions.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
-        inputActions.Player.Move.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
-        inputActions.Player.Move.performed += ctx => lookInput = Vector2.zero;
-    }
+//        inputActions.Player.Move.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
+//        inputActions.Player.Move.performed += ctx => lookInput = Vector2.zero;
+//    }
 }
