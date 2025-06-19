@@ -10,10 +10,10 @@ public class SceneController : MonoBehaviour
 {
     public Transform Car;
     public TextMeshProUGUI RestartText;
-    public float RotationSpeed = 90f;
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             SceneManager.LoadScene("Level");
@@ -34,12 +34,13 @@ public class SceneController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.F))
         {
-            Quaternion targetRotation = Quaternion.Euler(0f, 180f, 0f);
+            if (Car != null)
+            {
+                Vector3 forward = Car.transform.forward;
+                Vector3 up = Vector3.up;
 
-            Car.transform.rotation = Quaternion.RotateTowards(
-                Car.transform.rotation,
-                targetRotation,
-                RotationSpeed * Time.deltaTime);
+                Car.transform.rotation = Quaternion.LookRotation(forward, up);
+            }
         }
     }
 

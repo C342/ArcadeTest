@@ -1827,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 1881266454}
     - target: {fileID: 4836171169095447899, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
       propertyPath: drivespeed
-      value: 700
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 5772780289751590687, guid: 14dfe5bb7b571db4aacbd715a6fc6431, type: 3}
       propertyPath: field of view
@@ -13338,7 +13338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hold F to Flip!
+  m_text: 'Press F to Flip!
 
     Press Backspace to Restart!
 
