@@ -27,7 +27,7 @@ public class FreeLook : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             isResetting = true;
         }

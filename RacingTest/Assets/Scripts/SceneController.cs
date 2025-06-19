@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
-    public GameObject Car;
+    public Transform Car;
     public TextMeshProUGUI RestartText;
+    public float RotationSpeed = 90f;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Backspace))
         {
             SceneManager.LoadScene("Level");
         }
@@ -28,6 +30,16 @@ public class SceneController : MonoBehaviour
 
                 RestartText.gameObject.SetActive(false);
             }
+        }
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            Quaternion targetRotation = Quaternion.Euler(0f, 180f, 0f);
+
+            Car.transform.rotation = Quaternion.RotateTowards(
+                Car.transform.rotation,
+                targetRotation,
+                RotationSpeed * Time.deltaTime);
         }
     }
 
