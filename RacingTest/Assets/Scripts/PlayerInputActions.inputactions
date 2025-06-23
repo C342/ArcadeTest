@@ -16,12 +16,21 @@
                 },
                 {
                     "name": "Gamepad",
-                    "type": "Button",
-                    "id": "752013a5-0cf1-45e4-b46f-6a65277d500c",
-                    "expectedControlType": "Button",
+                    "type": "Value",
+                    "id": "bec80374-01c0-4adc-93c6-4edcc224266a",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "G29",
+                    "type": "Value",
+                    "id": "4e2bf44a-52e2-40da-93a4-32a31c58250e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -81,9 +90,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Button With One Modifier",
-                    "id": "9432294a-0aec-4a84-ab9f-1fd8c3855e4b",
-                    "path": "ButtonWithOneModifier",
+                    "name": "Movement",
+                    "id": "83d6e8b7-f2f7-4efd-b107-89aa8214b58e",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -92,13 +101,112 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Button",
-                    "id": "9c8615e3-e03b-40a2-80b1-083808868807",
-                    "path": "<Gamepad>/rightTrigger",
+                    "name": "up",
+                    "id": "d2d6d3c9-ceab-496a-ad0f-9f7cc8df5c6f",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Gamepad",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "674a72ae-e693-4915-9ab7-56329473da9f",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gamepad",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "7517b166-49b4-4eec-8be5-32f5a8df16a3",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gamepad",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "93b556fe-2b42-458d-9809-55071c852b2e",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gamepad",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Throttle",
+                    "id": "4e8cb234-b26a-4177-b577-9af18273e2a3",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "f6d6693b-53f7-4403-8ecc-dff4d0589bed",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "b839776e-1585-4f5a-bd9b-ab41fbff47e8",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Brake/Reverse",
+                    "id": "60c863d9-9a93-44c3-9a86-5e86285a6a93",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "94cea21c-ea9c-430c-a122-8bb1d10b89a2",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "68e2e868-a8dc-4dcd-8257-0ba7cb5b8bb6",
+                    "path": "*/{PrimaryTrigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G29",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
