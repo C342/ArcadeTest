@@ -16,7 +16,7 @@ public class SceneController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            SceneManager.LoadScene("Level");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         if (Car != null && RestartText != null)
