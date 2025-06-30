@@ -626,6 +626,7 @@ Transform:
   m_LocalScale: {x: 0.25713947, y: 9.737484, z: 82.88862}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 214408409}
   m_LocalEulerAnglesHint: {x: 0, y: -44.353, z: 0}
 --- !u!1001 &105103308
 PrefabInstance:
